@@ -11,7 +11,8 @@
     <StackPanel>
         <TextBlock Text="Каталог книг" FontSize="30"/>
 
-        <ListBox x:Name="listBooks" DisplayMemberPath="Title" Height="200"/>
-
+        <DataGrid  x:Name="listBooks" AutoGenerateColumns="True" Height="200"/>
+        <Button Content="Добавить" Click="Add_Click" Margin="5"/>
+        <Button Content="Удалить" Click="Del_Click" Margin="5"/>
     </StackPanel>
 </Page>

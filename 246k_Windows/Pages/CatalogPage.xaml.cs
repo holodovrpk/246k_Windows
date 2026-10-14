@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using _246k_Windows.Windows;
 
 namespace _246k_Windows.Pages
 {
@@ -33,6 +34,17 @@ namespace _246k_Windows.Pages
             books.Add(new Book { Title = "Пикник на обочине", Author = "Стругацкие", Year = 1972 });
 
             listBooks.ItemsSource = books;
+
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            AddBookWindow w = new AddBookWindow();
+            w.ShowDialog();
+        }
+
+        private void Del_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }
