@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,19 +20,22 @@ namespace _246k_Windows.Windows
     /// </summary>
     public partial class AddBookWindow : Window
     {
+        
+
         public AddBookWindow()
         {
             InitializeComponent();
+         
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            DialogResult = true;
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-
+            DialogResult = false;
         }
     }
 }

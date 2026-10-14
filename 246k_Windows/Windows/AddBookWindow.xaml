@@ -8,13 +8,13 @@
         Title="AddBookWindow" Height="450" Width="800">
     <StackPanel>
         <TextBlock Text="Название" Margin="5"/>
-        <TextBox x:Name="txtTitle" Margin="5"/>
+        <TextBox Text="{Binding Title}" Margin="5"/>
 
         <TextBlock Text="Автор" Margin="5"/>
-        <TextBox x:Name="txtAuthor" Margin="5"/>
+        <TextBox Text="{Binding Author}" Margin="5"/>
 
         <TextBlock Text="Год" Margin="5"/>
-        <TextBox x:Name="txtYear" Margin="5"/>
+        <TextBox Text="{Binding Year}" Margin="5"/>
 
         <Button Content="Добавить" Click="Add_Click" Margin="5"/>
         <Button Content="Отмена" Click="Cancel_Click" Margin="5"/>

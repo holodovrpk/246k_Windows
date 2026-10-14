@@ -39,8 +39,15 @@ namespace _246k_Windows.Pages
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
+            Book b = new Book();
             AddBookWindow w = new AddBookWindow();
-            w.ShowDialog();
+            w.DataContext = b;
+
+            if (w.ShowDialog() == true)
+            {
+                books.Add(b);
+            }
+            
         }
 
         private void Del_Click(object sender, RoutedEventArgs e)
